@@ -1,9 +1,33 @@
 
 * {
+    &,
     &::before,
     &::after {
         margin: 0; 
         padding: 0; 
         box-sizing: border-box; 
     }
+}
+
+.container {
+    margin: 0 auto; 
+
+    &--large {
+        max-width: 117rem;
+    }
+
+    &--small {
+        max-width: 80rem;
+    }
+}
+
+ul {
+    list-style-type: none; 
+}
+
+.divider {
+    border: none; 
+    height: 1px; 
+    background-color: #cecece;
+    margin: 10rem 0; 
 }

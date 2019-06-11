@@ -1,0 +1,59 @@
+
+.btn {
+    padding: .8rem 1rem; 
+    border-radius: .5rem; 
+
+    &:hover {
+        cursor: pointer; 
+    }
+
+    &__icon {
+        margin-right: .5rem; 
+    }
+
+    &__text {
+        font-weight: 400; 
+    }
+
+    &--transparent {
+        border: 1px solid $mainBtnColor;    
+        color: $mainBtnColor; 
+        transition: all .3s; 
+
+        &:hover {
+            color: $color-white; 
+            background-color: $mainBtnColor; 
+        }
+    }
+
+    &--blue {
+        background-color: $mainBtnColor; 
+        color: $color-white; 
+        transition: all .3s; 
+
+        &:hover {
+            background-color: darken($color: $mainBtnColor, $amount: 10%); 
+        }
+    }
+
+    &--link {
+        display: flex;
+        align-items: center;  
+        padding: 1rem 0; 
+        transition: all .3s;
+
+        &::after {
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f30b";
+            font-size: 1.8rem; 
+            margin-left: .7rem;
+            color: currentColor; 
+        }
+
+        &:hover {
+            color: $mainBtnColor; 
+        }
+    }
+
+} 

@@ -1,0 +1,23 @@
+.heading {
+
+
+    &__primary {
+        font-size: 5rem; 
+        font-weight: 600; 
+        line-height: 7rem; 
+    }
+
+    &__tertiary {
+        font-size: 2.2rem; 
+        line-height: 3rem; 
+        letter-spacing: .5px; 
+
+        &--light {
+            font-weight: 300; 
+        }
+
+        &--bold {
+            font-weight: 600; 
+        }
+    }
+}

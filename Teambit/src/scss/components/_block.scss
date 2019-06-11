@@ -1,0 +1,44 @@
+.block {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+
+    &__title {
+        width: 80%; 
+    }
+
+    &__cards {
+        display: flex; 
+        justify-content: space-between; 
+        margin: 7rem 0 10rem; 
+    }
+
+    &__card {
+        width: 25%; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+
+        &--image {
+            height: 12rem; 
+            margin-bottom: 3rem; 
+        }
+
+        &--text {
+            font-size: 1.8rem; 
+        }
+    }
+
+    &__after {
+        width: 50%; 
+
+        &--image {
+            width: 30rem; 
+        }
+
+        &--text {
+            margin-top: 10rem; 
+        }
+    }
+}

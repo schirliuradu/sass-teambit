@@ -10,7 +10,7 @@ browserSync.init({
     watch: true,
     port: 3000,
     server: {
-      baseDir: "./dist",
+      baseDir: "./",
       index: "index.html",
     }
 });

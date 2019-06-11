@@ -1,0 +1,17 @@
+.header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 2.5rem 0; 
+    border-bottom: 1px solid lighten($color: $mainTextColor, $amount: 45%); 
+
+    &__right {
+        display: flex; 
+        align-items: center; 
+    }
+
+    &__sign-up {
+        margin-left: 4rem; 
+
+    }
+} 
