@@ -1,6 +1,10 @@
 .section {
     padding: 10rem 0; 
 
+    &--pad-6 {
+        padding: 6rem 0; 
+    }
+
     &--beige {
         background-color: $color-beige; 
     }

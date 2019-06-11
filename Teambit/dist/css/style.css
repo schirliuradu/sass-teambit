@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -52,6 +56,18 @@ a {
 
 .header a {
   font-weight: 600;
+}
+
+.u-margin-tb-20 {
+  margin: 2rem 0;
+}
+
+.u-margin-tb-40 {
+  margin: 4rem 0;
+}
+
+.u-padding-tb-100 {
+  padding: 10rem 0;
 }
 
 .navigation__list {
@@ -101,14 +117,14 @@ a {
   background-color: #233569;
 }
 
-.btn--link {
+.btn__link {
   display: flex;
   align-items: center;
   padding: 1rem 0;
   transition: all 0.3s;
 }
 
-.btn--link::after {
+.btn__link::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\F30B";
@@ -117,14 +133,30 @@ a {
   color: currentColor;
 }
 
-.btn--link:hover {
+.btn__link:hover {
   color: #30488f;
+}
+
+.btn__link--big {
+  color: #30488f;
+  font-size: 2.2rem;
+}
+
+.btn__link--big::after {
+  font-size: 2.2rem;
+  padding-left: 1rem;
 }
 
 .heading__primary {
   font-size: 5rem;
   font-weight: 600;
   line-height: 7rem;
+}
+
+.heading__secondary {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 6rem;
 }
 
 .heading__tertiary {
@@ -139,6 +171,12 @@ a {
 
 .heading__tertiary--bold {
   font-weight: 600;
+}
+
+.heading__quat {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.5rem;
 }
 
 .block {
@@ -183,7 +221,121 @@ a {
 }
 
 .block__after--text {
-  margin-top: 10rem;
+  margin-top: 8rem;
+}
+
+.gen-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gen-content--column {
+  flex-direction: column;
+}
+
+.gen-content__left,
+.gen-content__right {
+  width: 50%;
+}
+
+.gen-content__wrapper {
+  width: 75%;
+}
+
+.gen-content__wrapper--left {
+  margin-left: auto;
+}
+
+.gen-content__left {
+  padding-right: 1.5rem;
+}
+
+.gen-content__info {
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.gen-content__links {
+  margin: 4rem 0 2rem;
+}
+
+.gen-content__links small {
+  margin: 0 2rem;
+  color: #d6c0ad;
+}
+
+.gen-content__image {
+  width: 100%;
+}
+
+.gen-content__image--big {
+  width: 130%;
+}
+
+.gen-content__image--left {
+  transform: translateX(-20rem);
+}
+
+.gen-content__image--right {
+  transform: translateX(20rem);
+}
+
+.gen-content__after-img {
+  width: 60%;
+  margin: 3rem 0 0 3rem;
+}
+
+.review {
+  width: 65rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #cecece;
+  padding: 2.5rem 4rem;
+  position: relative;
+}
+
+.review::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F10D";
+  font-size: 4rem;
+  color: #30488f;
+  position: absolute;
+  top: -2rem;
+  left: 0;
+}
+
+.review__paragraph {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.review__paragraph:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.review__info {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.review__photo {
+  width: 4.5rem;
+}
+
+.review__photo:first-of-type {
+  margin-right: 0.5rem;
+}
+
+.review__authors {
+  margin-left: 1.5rem;
+}
+
+.review__authors--name {
+  color: #30488f;
+  margin-bottom: 0.5rem;
 }
 
 .header {
@@ -207,41 +359,55 @@ a {
   padding: 10rem 0;
 }
 
+.section--pad-6 {
+  padding: 6rem 0;
+}
+
 .section--beige {
   background-color: #ffe7d2;
 }
 
-.intro {
+.footer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__left {
+  flex: 0 0 25%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 10rem 0;
 }
 
-.intro__left,
-.intro__right {
-  width: 50%;
+.footer__logo {
+  width: 10rem;
+  margin-right: 1.5rem;
+  align-self: flex-start;
 }
 
-.intro__left {
-  padding-right: 1.5rem;
+.footer__right {
+  flex: 0 0 65%;
+  margin-left: auto;
+  display: flex;
 }
 
-.intro__left small {
-  margin: 0 2rem;
-  color: #d6c0ad;
+.footer__list {
+  flex: 0 0 20%;
 }
 
-.intro__info {
-  width: 90%;
-  margin-top: 2rem;
+.footer__list:not(:last-of-type) {
+  padding-right: 1rem;
 }
 
-.intro__links {
-  margin: 4rem 0 2rem;
+.footer__list-item:not(:last-child) {
+  margin-bottom: 1.3rem;
 }
 
-.intro__image {
-  width: 100%;
+.footer__link {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.footer__link:hover {
+  color: #30488f;
 }
 

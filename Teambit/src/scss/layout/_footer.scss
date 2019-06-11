@@ -1,0 +1,45 @@
+.footer {
+    display: flex; 
+    align-items: flex-start; 
+
+
+    &__left {
+        flex: 0 0 25%; 
+        display: flex; 
+        align-items: center; 
+    }
+
+    &__logo {
+        width: 10rem; 
+        margin-right: 1.5rem; 
+        align-self: flex-start; 
+    }
+
+    &__right {
+        flex: 0 0 65%; 
+        margin-left: auto; 
+        display: flex; 
+    }
+
+    &__list {
+        flex: 0 0 20%; 
+        &:not(:last-of-type) {
+            padding-right: 1rem; 
+        }
+    }
+
+    &__list-item {
+
+        &:not(:last-child) {
+            margin-bottom: 1.3rem; 
+        }
+    }
+
+    &__link {
+        font-size: 1.5rem; 
+        line-height: 2rem; 
+        &:hover {
+            color: $mainBtnColor; 
+        }
+    }
+}

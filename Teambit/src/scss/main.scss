@@ -13,10 +13,11 @@
 @import 'components/btn'; 
 @import 'components/headings'; 
 @import 'components/block'; 
+@import 'components/gen-content'; 
+@import 'components/review'; 
 
 // imports from layout folder 
 @import 'layout/header'; 
 @import 'layout/section'; 
+@import 'layout/footer'; 
 
-// imports from pages folder
-@import 'pages/home'; 

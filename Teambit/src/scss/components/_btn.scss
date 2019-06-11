@@ -36,7 +36,7 @@
         }
     }
 
-    &--link {
+    &__link {
         display: flex;
         align-items: center;  
         padding: 1rem 0; 
@@ -54,6 +54,18 @@
         &:hover {
             color: $mainBtnColor; 
         }
+
+        &--big {
+            color: $mainBtnColor; 
+            font-size: 2.2rem; 
+
+            &::after {
+                font-size: 2.2rem; 
+                padding-left: 1rem; 
+            }
+        }
     }
+
+
 
 } 

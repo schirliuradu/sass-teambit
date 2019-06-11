@@ -1,0 +1,50 @@
+.review {
+    width: 65rem; 
+    background-color: $color-white; 
+    border-radius: .5rem; 
+    border: 1px solid #cecece; 
+    padding: 2.5rem 4rem; 
+    position: relative; 
+
+    &::before {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f10d";
+        font-size: 4rem;
+        color: $mainBtnColor;  
+        position: absolute; 
+        top: -2rem; 
+        left: 0;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem; 
+        line-height: 2.5rem; 
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem; 
+        }
+    }
+
+    &__info {
+        display: flex; 
+        align-items: center; 
+        margin-top: 2rem; 
+    }
+
+    &__photo {
+        width: 4.5rem; 
+
+        &:first-of-type {
+            margin-right: .5rem; 
+        }
+    }
+
+    &__authors {
+        margin-left: 1.5rem; 
+        &--name {
+            color: $mainBtnColor; 
+            margin-bottom: .5rem; 
+        }
+    }
+}
