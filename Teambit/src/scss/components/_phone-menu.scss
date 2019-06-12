@@ -1,0 +1,20 @@
+.phone-menu {
+    display: none; 
+    background-color: white; 
+    padding: 2rem 1.5rem; 
+    width: 100%; 
+    position: fixed; 
+    top: 8.8rem; 
+    left: 0;
+    z-index: 15; 
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 1.5rem; 
+        }
+        &:last-child {
+            margin-top: 2rem; 
+            margin-bottom: 0; 
+        }
+    }
+}

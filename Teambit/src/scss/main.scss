@@ -4,9 +4,7 @@
 
 // imports from the base folder 
 @import 'base/base'; 
-@import 'base/typography'; 
 @import 'base/utilities'; 
-
 
 // imports from components folder 
 @import 'components/navigation'; 
@@ -15,6 +13,8 @@
 @import 'components/block'; 
 @import 'components/gen-content'; 
 @import 'components/review'; 
+@import 'components/spaghetti'; 
+@import 'components/phone-menu'; 
 
 // imports from layout folder 
 @import 'layout/header'; 

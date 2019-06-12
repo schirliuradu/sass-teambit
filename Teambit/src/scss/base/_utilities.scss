@@ -1,11 +1,47 @@
-.u-margin-tb-20 {
+.u-margin-tb-small {
     margin: 2rem 0; 
 }
 
-.u-margin-tb-40 {
+.u-margin-tb-medium {
     margin: 4rem 0; 
 }
 
-.u-padding-tb-100 {
+.u-padding-tb-largest {
     padding: 10rem 0; 
+    @include respond(tablet) {    
+        padding: 8rem 0;          
+    }
+    @include respond(phone) {    
+        padding: 6rem 0;          
+    }
+} 
+
+.divider {
+    border: none; 
+    height: 1px; 
+    background-color: #cecece;
+    margin: 10rem 0; 
+    @include respond(phone) {    
+        margin: 6rem 0;   
+    }
+}
+
+// solves the fixed flux collapse of the header 
+.intro {
+    margin-top: 10rem; 
+}
+
+// on opening of the mobile menu, need it just for the opacity 
+.overlay {
+    background-color: $color-white; 
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    display: none; 
+    opacity: .6; 
+    z-index: 10; 
+
+    &--active {
+        display: block; 
+    }
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <header>
+    <header> 
         <div class="container container--large header">
             <div class="header__left">
                 <img src="https://teambit.io/wp-content/themes/teambeat/img/logo.svg" alt="Teambit logo" class="header__logo">
@@ -30,19 +30,58 @@
                         <li class="navigation__item">
                             <a href="" class="navigation__link">Sign in</a>
                         </li>
+                        <li class="navigation__item">
+                            <a href="" class="btn btn--transparent btn--orange">
+                                <i class="btn__icon fab fa-google"></i>
+                                <span class="btn__text">Sign up</span>
+                            </a>
+                        </li>
                     </ul> 
+                    <div class="spaghetti">
+                        <span class="spaghetti__center"></span>
+                    </div>
                 </nav>               
-                <a href="" class="btn btn--transparent btn--orange header__sign-up">
-                    <i class="btn__icon fab fa-google"></i>
-                    <span class="btn__text">Sign up</span>
-                </a>
             </div>
+        </div>
+
+        <div class="phone-menu">
+            <ul class="phone-menu__list">
+                <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="">Feedback</a>
+                </li>
+                <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="">Surveys</a>
+                </li>
+                <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="">Reviews</a>
+                </li>
+                <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="">Praise</a>
+                </li>
+                <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="">Pricing</a>
+                </li>
+                <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="">Blog</a>
+                </li>
+                <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="">Sign in</a>
+                </li>
+                <li class="phone-menu__item">
+                    <a href="" class="btn btn--block btn--transparent btn--orange">
+                        <i class="btn__icon fab fa-google"></i>
+                        <span class="btn__text">Sign up</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
+    <div class="overlay"></div>
+
     <main>
         <section class="section">
-            <div class="container container--large">
+            <div class="container container--large intro">
                 <div class="gen-content">
                     <div class="gen-content__left"> 
                         <div class="gen-content__title">
@@ -139,10 +178,10 @@
                                 <h3 class="heading__tertiary heading__tertiary--bold">Feedback to help teammates improve</h3>
                             </div>
                             <div class="gen-content__info">
-                                <h3 class="heading__tertiary heading__tertiary--light u-margin-tb-20">Empower your teammates to know in real time what they are doing well and what they need to improve.</h3>
+                                <h3 class="heading__tertiary heading__tertiary--light u-margin-tb-small">Empower your teammates to know in real time what they are doing well and what they need to improve.</h3>
                             </div>
                             <a class="btn btn__link btn__link--big">Learn more</a>
-                            <img src="https://teambit.io/wp-content/themes/teambeat/img/employee-survey.jpg" alt="people" class="gen-content__after-img">
+                            <img src="https://teambit.io/wp-content/themes/teambeat/img/communication.jpg" alt="people" class="gen-content__after-img">
                         </div>
                     </div> 
                 </div>
@@ -158,7 +197,7 @@
                                 <h3 class="heading__tertiary heading__tertiary--bold">Surveys to help the team be better</h3>
                             </div>
                             <div class="gen-content__info">
-                                <h3 class="heading__tertiary heading__tertiary--light u-margin-tb-20">Get real-time insights into your team with research-backed, lightweight and regular surveys.</h3>
+                                <h3 class="heading__tertiary heading__tertiary--light u-margin-tb-small">Get real-time insights into your team with research-backed, lightweight and regular surveys.</h3>
                             </div>
                             <a class="btn btn__link btn__link--big">Learn more</a>
                             <img src="https://teambit.io/wp-content/themes/teambeat/img/insights.jpg" alt="people" class="gen-content__after-img">
@@ -183,7 +222,7 @@
                                 <h3 class="heading__tertiary heading__tertiary--bold">Reviews to help teammates get a fair evaluation</h3>
                             </div>
                             <div class="gen-content__info">
-                                <h3 class="heading__tertiary heading__tertiary--light u-margin-tb-20">Make better compensation and promotion decisions with objective and quick performance reviews.</h3>
+                                <h3 class="heading__tertiary heading__tertiary--light u-margin-tb-small">Make better compensation and promotion decisions with objective and quick performance reviews.</h3>
                             </div>
                             <a class="btn btn__link btn__link--big">Learn more</a>
                             <img src="https://teambit.io/wp-content/themes/teambeat/img/review.jpg" alt="people" class="gen-content__after-img">
@@ -202,7 +241,7 @@
                                 <h3 class="heading__tertiary heading__tertiary--bold">Praise to help teammates feel valued</h3>
                             </div>
                             <div class="gen-content__info">
-                                <h3 class="heading__tertiary heading__tertiary--light u-margin-tb-20">Make it a habit to recognize and praise people who do great work.</h3>
+                                <h3 class="heading__tertiary heading__tertiary--light u-margin-tb-small">Make it a habit to recognize and praise people who do great work.</h3>
                             </div>
                             <a class="btn btn__link btn__link--big">Learn more</a>
                             <img src="https://teambit.io/wp-content/themes/teambeat/img/recognition.jpg" alt="people" class="gen-content__after-img">
@@ -218,7 +257,7 @@
         <section class="section section--pad-6 section--beige">
             <div class="container container--small">
                 <div class="gen-content gen-content--column">
-                    <div class="gen-content__title u-margin-tb-40">
+                    <div class="gen-content__title u-margin-tb-medium">
                         <h2 class="heading heading__secondary">See Teambit for yourself.</h2>
                         <h2 class="heading heading__secondary">Get started in seconds</h2>
                     </div>
@@ -266,24 +305,22 @@
                         </a>
                     </div>   
                     <a class="btn btn__link">or use your email address</a>
-
-
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container container--large footer u-padding-tb-100">
+        <div class="container container--large footer u-padding-tb-largest">
             <div class="footer__left">
                 <img src="https://teambit.io/wp-content/themes/teambeat/img/logo-small.svg" alt="Logo" class="footer__logo">
-                <h4 class="heading heading__quat"><span>Teambit</span> helps teams create high performing cultures by making feedback a daily habit.</h4>
+                <h4 class="heading__quat"><span>Teambit</span> helps teams create high performing cultures by making feedback a daily habit.</h4>
             </div>
             <div class="footer__right">
 
                 <ul class="footer__list">
                     <li class="footer__list-item">
-                        <h4 class="heading heading__quat">Product</h4>
+                        <h4 class="heading__quat">Product</h4>
                     </li>
                     <li class="footer__list-item"><a href="" class="footer__link">Feedback</a></li>
                     <li class="footer__list-item"><a href="" class="footer__link">Surveys</a></li>
@@ -296,7 +333,7 @@
 
                 <ul class="footer__list">
                     <li class="footer__list-item">
-                        <h4 class="heading heading__quat">About</h4>
+                        <h4 class="heading__quat">About</h4>
                     </li>
                     <li class="footer__list-item"><a href="" class="footer__link">About</a></li>
                     <li class="footer__list-item"><a href="" class="footer__link">Terms and Privacy</a></li>
@@ -307,7 +344,7 @@
 
                 <ul class="footer__list">
                     <li class="footer__list-item">
-                        <h4 class="heading heading__quat">Connect</h4>
+                        <h4 class="heading__quat">Connect</h4>
                     </li>
                     <li class="footer__list-item"><a href="" class="footer__link">Contact us</a></li>
                     <li class="footer__list-item"><a href="" class="footer__link">Twitter</a></li>
@@ -317,7 +354,7 @@
 
                 <ul class="footer__list">
                     <li class="footer__list-item">
-                        <h4 class="heading heading__quat">Labs</h4>
+                        <h4 class="heading__quat">Labs</h4>
                     </li>
                     <li class="footer__list-item"><a href="" class="footer__link">Manager checklist</a></li>
                     <li class="footer__list-item"><a href="" class="footer__link">Manager assessment</a></li>
@@ -326,7 +363,7 @@
 
                 <ul class="footer__list">
                     <li class="footer__list-item">
-                        <h4 class="heading heading__quat">From the blog</h4>
+                        <h4 class="heading__quat">From the blog</h4>
                     </li>
                     <li class="footer__list-item"><a href="" class="footer__link">How to change your company culture: a four-step framework</a></li>
                     <li class="footer__list-item"><a href="" class="footer__link">How teams can be more productive by killing 8-hour workday</a></li>
@@ -338,5 +375,6 @@
         </div>
     </footer>
 
+    <script src="dist/js/script.js"></script>
 </body>
 </html>

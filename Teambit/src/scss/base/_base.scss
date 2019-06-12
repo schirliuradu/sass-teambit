@@ -9,12 +9,30 @@
     }
 }
 
+html {
+    font-size: 62.5%;               // 1rem = 10px 
+    @include respond(tablet) {    
+        font-size: 50%;           // 1rem = 8px 
+    }
+}
+
 body {
-    overflow-x: hidden; 
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
+    color: $mainTextColor; 
+    @include respond(tablet) {    
+        overflow-x: hidden;            
+    }
 }
 
 .container {
     margin: 0 auto; 
+    padding-left: .5rem !important; 
+    padding-right: .5rem !important; 
+    @include respond(tablet) {    
+        padding-left: 1.5rem !important; 
+        padding-right: 1.5rem !important;                
+    }
 
     &--large {
         max-width: 117rem;
@@ -29,9 +47,7 @@ ul {
     list-style-type: none; 
 }
 
-.divider {
-    border: none; 
-    height: 1px; 
-    background-color: #cecece;
-    margin: 10rem 0; 
+a {
+    text-decoration: none; 
+    color: inherit; 
 }

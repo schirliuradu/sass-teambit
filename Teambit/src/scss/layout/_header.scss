@@ -1,17 +1,23 @@
 .header {
     display: flex; 
     align-items: center; 
+    background-color: $color-white; 
     justify-content: space-between; 
     padding: 2.5rem 0; 
     border-bottom: 1px solid lighten($color: $mainTextColor, $amount: 45%); 
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100%; 
+    z-index: 15; 
+
+    a {
+        font-weight: 600; 
+    }
 
     &__right {
         display: flex; 
         align-items: center; 
-    }
-
-    &__sign-up {
-        margin-left: 4rem; 
-
     }
 } 

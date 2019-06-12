@@ -3,6 +3,9 @@
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
+    @include respond(tablet) {    
+        flex-direction: column;          
+    }
 
     &--column {
         flex-direction: column; 
@@ -13,8 +16,33 @@
         width: 50%; 
     }
 
+    &__left {
+        @include respond(tablet) {    
+            width: 80%;
+            text-align: center;      
+        }
+    }
+
+    &__info {
+        @include respond(tablet) {    
+            margin: 2rem auto; 
+        }
+    }
+
+    &__right {
+        @include respond(tablet) {    
+            width: 90%;  
+            margin: 2rem;    
+        }
+    }
+
     &__wrapper {
         width: 75%; 
+        @include respond(tablet) {    
+            width: 100%;
+            margin-top: 2rem; 
+            text-align: center;      
+        }
 
         &--left {
             margin-left: auto; 
@@ -30,12 +58,29 @@
         margin-top: 2rem; 
     }
 
+    &__title {
+        @include respond(tablet) {    
+            text-align: center;      
+        }
+    }
+
     &__links {
         margin: 4rem 0 2rem; 
 
         small {
             margin: 0 2rem; 
             color: lighten($color: $mainTextColor, $amount: 50%); 
+            @include respond(phone) {    
+                margin: 1rem 0;     
+            }
+        }
+
+        @include respond(phone) {    
+            width: 100%;
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;       
         }
     }
 
@@ -44,20 +89,32 @@
 
         &--big {
             width: 130%; 
+            @include respond(tablet) {    
+                width: 100%;   
+            }
         }
 
         &--left {
             transform: translateX(-20rem); 
+            @include respond(tablet) {    
+                transform: translateX(0);  
+            }
         }
 
         &--right {
             transform: translateX(20rem); 
+            @include respond(tablet) {    
+                transform: translateX(0);  
+            }
         }
     }
 
     &__after-img {
         width: 60%; 
         margin: 3rem 0 0 3rem; 
+        @include respond(tablet) {    
+            width: 40%;
+            margin: 3rem 0 0 0;   
+        }
     }
-
 }

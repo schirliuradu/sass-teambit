@@ -41,6 +41,9 @@
         align-items: center;  
         padding: 1rem 0; 
         transition: all .3s;
+        @include respond(tablet) {    
+            justify-content: center;          
+        }
 
         &::after {
             font-family: "Font Awesome 5 Free"; 
@@ -66,6 +69,8 @@
         }
     }
 
-
-
+    &--block {
+        display: block;
+        text-align: center; 
+    }
 } 

@@ -1,8 +1,15 @@
 .section {
-    padding: 10rem 0; 
+    padding: 10rem 1rem; 
+    overflow-x: hidden; 
+    @include respond(phone) {    
+        padding: 5rem 1rem;      
+    }
 
     &--pad-6 {
         padding: 6rem 0; 
+        @include respond(tablet) {    
+            padding: 3rem 0;     
+        }
     }
 
     &--beige {

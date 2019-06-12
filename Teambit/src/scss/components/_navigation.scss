@@ -1,21 +1,17 @@
 .navigation {
-    
+    font-size: 1.3rem; 
+
     &__list {
         display: flex; 
         align-items: center; 
-
+        @include respond(phone) {    
+            display: none;         
+        }    
     }
 
     &__item {
-
-
-                
         &:not(:last-child) {
             margin-right: 3rem; 
         }
-    }
-
-    &__link {
-
     }
 } 

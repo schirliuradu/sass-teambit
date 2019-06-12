@@ -1,0 +1,12 @@
+
+// Media query manager 
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 767px) { @content }; 
+    }
+    @if $breakpoint == tablet {
+        @media (max-width: 970px) { @content }; 
+    }
+}
+  
