@@ -30,6 +30,22 @@ body {
   }
 }
 
+header {
+  height: 79px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+@media (max-width: 970px) {
+  header {
+    height: 69px;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding-left: 0.5rem !important;
@@ -634,12 +650,7 @@ a {
   justify-content: space-between;
   padding: 2.5rem 0;
   border-bottom: 1px solid #ceb39c;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
-  z-index: 15;
 }
 
 .header a {

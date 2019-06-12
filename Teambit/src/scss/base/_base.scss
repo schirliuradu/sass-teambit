@@ -25,6 +25,19 @@ body {
     }
 }
 
+header {
+    height: 79px; 
+    background-color: $color-white; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 15; 
+    @include respond(tablet) {    
+        height: 69px;            
+    }
+}
+
 .container {
     margin: 0 auto; 
     padding-left: .5rem !important; 
